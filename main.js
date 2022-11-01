@@ -1,6 +1,7 @@
 let score = 0
 let money = 0
 let moneyAmount = 1
+let upgr4Count = 0
 
 const showscore = document.getElementById("score")
 const showmoney = document.getElementById("money")
@@ -70,9 +71,12 @@ function upgr3() {
 
 function upgr4() {
     if (money >= 500) {
+        if (upgr4Count < 1){
         setInterval(function () {
             money = money + 5
             document.querySelector("#money").innerHTML = Math.round(money) + "$"
+            upgr4Count++
+            innerHTML = "Sold Out"
 
         }, 1000)
         money = money - 500
@@ -81,7 +85,7 @@ function upgr4() {
         const audio = new Audio();
         audio.src = "adriantnt_u_click.mp3"
         audio.play();
-    } else {
+    }} else {
         const audio = new Audio();
         audio.src = "sosumi-2.mp3"
         audio.play();
