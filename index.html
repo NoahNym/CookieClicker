@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="money">0$</h1>
+    <div id="center">
+        <button onclick="playAudio()" id="play">▶️</button>
+        <button onclick="pauseAudio()" id="pause">⏸️</button>
+        <h1 id="score">0</h1><img onclick="countscore()" src="Cook.png" width="200px" height="200px" alt="">
+    </div>
+    <h1 id="upgrades">Upgrades:
+        <button class="button" onclick="upgr1()">+0.1x - 125$</button>
+        <button class="button" onclick="upgr2()">+5x - 2000$</button>
+        <button class="button" onclick="upgr3()">+20x - 10000$</button>
+        <button class="button" onclick="upgr4()">+5$/s - 500$</button>
+        <button class="button" onclick="upgr5()">+15$/s - 1000$</button>
+        <button class="button" onclick="upgr6()">+200$/s - 10000$</button>
+    </h1>
+    <script src="main.js"></script>
+</body>
+
+</html>

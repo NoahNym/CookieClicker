@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: rgb(15, 15, 56);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#money {
+    background: rgb(48, 25, 77);
+    width: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65vw;
+}
+
+#score {
+    position: absolute;
+    bottom: 20px;
+}
+
+#upgrades {
+    background: rgb(48, 25, 77);
+    width: 20vw;
+
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    margin-top: 55px;
+    margin-left: 60px;
+    border-radius: 10px;
+    color: aliceblue;
+    background: rgb(65, 65, 141);
+    font-size: 1.1rem;
+
+}
+
+.play,.pause{
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    position: absolute;
+    font-size: 1.4rem;
+}
+
+.play{
+    top: 10px;
+    left: 16vw;
+}
+.pause{
+    top: 10px;
+    left: 17.5vw;
+}
+
+
+img:active {
+    transform: scale(1.05);
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
