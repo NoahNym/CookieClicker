@@ -23,7 +23,7 @@ function upgr1() {
 
     if (money >= 125) {
         moneyAmount = moneyAmount + 0.1
-        money = money - 200
+        money = money - 125
         showscore.textContent = score
         showmoney.textContent = document.querySelector("#money").innerHTML = Math.round(money) + "$"
         const audio = new Audio();
@@ -131,16 +131,3 @@ function upgr6() {
     }
 }
 
-var x = document.getElementById("play");
-
-function playAudio() {
-  x.play(main.js);
-}
-
-
-
-var x = document.getElementById("pause");
-
-function pauseAudio() {
-  x.pause(moonshine-prigida-main-version-01-36-17027 (1).mp3);
-}
